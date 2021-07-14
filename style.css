@@ -4,3 +4,362 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+header,main{
+    display: flex;
+    justify-content: center;
+}
+.container{
+  width: 1070px;
+  padding: 0 1%;
+}
+
+.btn{
+    background: #E02C6D;
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+.btn i{
+    margin-left: 4px;
+    position: relative;
+    left: 0;
+    transition: .4s;
+}
+.btn:hover.btn i{
+    left: 10px;
+} 
+
+/* Banner Section Style */
+header{
+    background: #2D25A0;
+}
+.banner {
+    padding: 86px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+.banner img{
+    max-width: 100%;
+    transition: .4s;
+}
+.banner:hover.banner img{
+    transform: scale(1.1);
+}
+.banner .banner-title{
+    font-size: 64px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Main Style */
+/* Players Section Style */
+.players{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: space-around;
+}
+.player{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    padding: 1.3rem;
+    
+}
+.player-img img{
+    max-width: 100%;
+}
+.player-info .name{
+    font-weight: 700;
+    font-size: 28px;
+    color: #18191F;
+}
+.player-info .lead{
+    font-size: 16px;
+    font-weight: normal;
+    color: #6C6C6C;
+}
+
+/* All highlights Section Style */
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 150px 0;
+}
+.highlight-title{
+    font-size: 48px;
+    font-weight: 600;
+}
+.highlights .lead{
+    font-size: 16px;
+    color: #6C6C6C;
+    text-align: left;
+    padding: 1.5rem 0;
+    width: 80%;
+}
+.highlights img{
+    max-width: 100%;
+}
+#groups-teams .section-title h1{
+    font-size: 45px;
+    font-weight: 700;
+    color: #18191F;
+    text-align: center;
+}
+.teams{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.team img{
+    max-width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: .4s;
+}
+.team img:hover{
+    filter: grayscale(0%);
+}
+.groups{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 250px;
+    margin-top: 20px;
+}
+.group{
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    min-width: 300px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.group img{
+    width: 40px;
+}
+.group h3{
+    font-size: 30px;
+    color: #e83a3b;
+}
+
+/* Stadium */
+#stadium{
+    margin: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding: 1.3rem;
+
+}
+.stadium-img img{
+    max-width: 100%;
+}
+.stadium-img span{
+    color: #777;
+    font-weight: 600;
+    font-size: 16px;
+}
+.stadium-info h3{
+    font-size: 25px;
+    color: #18191F;
+    margin-bottom: 1rem;
+}
+.stadium-info .lead{
+    color: #666;
+    font-weight: 400;
+    font-size: 16px;
+}
+.stadium-info hr{
+    border: 0;
+    background-color:#8888;
+    height: 1px;
+    margin: 1rem 0;
+
+}
+
+
+
+
+/* Footer Section Style */
+footer{
+    margin-top: 50px;
+    text-align: center;
+}
+.footer-img img{
+    width: 450px;
+}
+footer ul{
+    text-align: center;
+    padding: 20px 0;
+}
+footer ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+footer ul li a{
+    background: rgba(153, 153, 153, 0.39);
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 35px;
+    border-radius: 50%;
+    color: rgba(102, 102, 102, 0.61);
+    transition: .4s;
+}
+footer ul li a:hover{
+    color: #e83a3b;
+}
+footer .copyright{
+    padding-bottom: 63px;
+}
+
+
+
+
+@media only screen and (max-width:992px) {
+      /* Banner Section */
+    .banner .banner-title {
+        font-size: 42px;
+    }
+    /* Players Section */
+    .players {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    }
+    .player{
+        max-width: 336px;
+    }
+    /* Highlights Section */
+    .highlight-title {
+     font-size: 31px;
+    }
+    .highlights .lead {
+     font-size: 14px;
+    }
+    /* Teams Section */
+    #groups-teams .section-title h1 {
+    font-size: 32px;
+}
+    .teams {
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    justify-items: center;
+}
+.team {
+    text-align: center;
+}
+.team img {
+    max-width: 60%;
+}
+/* Groups Section */
+.groups {
+    justify-items: center;
+    grid-column-gap: 0px;
+}
+.group{
+    min-width: 300px;
+}
+/* Stadium Section */
+#stadium {
+    grid-template-columns: repeat(1, 1fr);
+}
+.stadium-info{
+    margin-top: 2rem;
+}
+}
+@media only screen and (max-width:768px){
+    /* Container */
+    .container{
+        width: 100%;
+    }
+    /* Banner Section */
+    .banner{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-left{
+        text-align: center;
+    }
+    .banner-left .banner-title{
+        font-size: 37px;
+    }
+    .banner-left .btn{
+        margin: auto;
+    }
+    .banner-right{
+        margin-top: 4rem;
+        text-align: center;
+    }
+    .banner-right img{
+        max-width: 70%;
+    }
+    /* Players Section */
+    .players {
+    grid-template-columns: repeat(2, 1fr);
+}
+.highlights {
+    grid-template-columns: repeat(1, 1fr);
+}
+.highlights .left{
+    text-align: center;
+}
+.highlights .lead,.btn{
+    margin: auto;
+}
+.highlights .right{
+    margin-top: 2rem;
+}
+/* Footer Section */
+  .footer-img img{
+      width: 350px;
+  }
+}
+@media only screen and (max-width: 650px) {
+    /* Players Section */
+    .players {
+    grid-template-columns: repeat(1, 1fr);
+}
+ /* Teams Section */
+ .teams {
+     grid-template-columns: repeat(5, 1fr);
+ }
+ #groups-teams .section-title h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.groups {
+    grid-template-columns: repeat(1, 1fr);
+}
+.group:last-child{
+    margin-top: 1rem;
+}
+}
+@media only screen and (max-width: 525px){
+    /* Banner Section */
+    .banner-left .banner-title{
+        font-size: 26px;
+    }
+    /* Highlights Section */
+    .highlight-title {
+    font-size: 26px;
+}
+.teams {
+    grid-template-columns: repeat(2, 1fr);
+}
+/* Footer Section */
+.footer-img img {
+    width: 263px;
+}
+}
