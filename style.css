@@ -1,3 +1,4 @@
+/* Coustom CSS for Full Page */
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +13,6 @@ header,main{
   width: 1070px;
   padding: 0 1%;
 }
-
 .btn{
     background: #E02C6D;
     width: 150px;
@@ -34,7 +34,11 @@ header,main{
     left: 10px;
 } 
 
-/* Banner Section Style */
+
+
+/*-------------------------------------------------
+              Banner Section Style 
+ --------------------------------------------------*/
 header{
     background: #2D25A0;
 }
@@ -58,8 +62,12 @@ header{
     margin-bottom: 30px;
 }
 
-/* Main Style */
-/* Players Section Style */
+/*--------------------------------------------------
+                 Main Section Style
+-------------------------------------------------- */
+/*--------------------------------------------------
+              Players Section Style
+ --------------------------------------------------*/
 .players{
     margin-top: 70px;
     display: grid;
@@ -87,7 +95,9 @@ header{
     color: #6C6C6C;
 }
 
-/* All highlights Section Style */
+/*--------------------------------------------------
+           All highlights Section Style
+-------------------------------------------------- */
 .highlights{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -153,7 +163,9 @@ header{
     color: #e83a3b;
 }
 
-/* Stadium */
+/*--------------------------------------------------
+                    Stadium 
+--------------------------------------------------*/
 #stadium{
     margin: 100px 0;
     display: grid;
@@ -191,9 +203,9 @@ header{
 }
 
 
-
-
-/* Footer Section Style */
+/*--------------------------------------------------
+               Footer Section Style 
+--------------------------------------------------*/
 footer{
     margin-top: 50px;
     text-align: center;
@@ -229,12 +241,19 @@ footer .copyright{
 
 
 
+/* --------------------------------------------------
+         Screen Size Max Width 992px
+-------------------------------------------------- */
+/* --------------------------------------------------
+              Responsive Full Page
+-------------------------------------------------- */
+
 @media only screen and (max-width:992px) {
-      /* Banner Section */
+      /*----------- Banner Section-----------*/
     .banner .banner-title {
         font-size: 42px;
     }
-    /* Players Section */
+    /*-----------Players Section-----------*/
     .players {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
@@ -242,14 +261,14 @@ footer .copyright{
     .player{
         max-width: 336px;
     }
-    /* Highlights Section */
+    /*-----------Highlights Section-----------*/
     .highlight-title {
      font-size: 31px;
     }
     .highlights .lead {
      font-size: 14px;
     }
-    /* Teams Section */
+    /*-----------Teams Section-----------*/
     #groups-teams .section-title h1 {
     font-size: 32px;
 }
@@ -264,7 +283,7 @@ footer .copyright{
 .team img {
     max-width: 60%;
 }
-/* Groups Section */
+/*-----------Groups Section-----------*/
 .groups {
     justify-items: center;
     grid-column-gap: 0px;
@@ -272,7 +291,7 @@ footer .copyright{
 .group{
     min-width: 300px;
 }
-/* Stadium Section */
+/*-----------Stadium Section-----------*/
 #stadium {
     grid-template-columns: repeat(1, 1fr);
 }
@@ -280,12 +299,16 @@ footer .copyright{
     margin-top: 2rem;
 }
 }
+
+/* --------------------------------------------------
+         Screen Size Max Width 768px
+-------------------------------------------------- */
 @media only screen and (max-width:768px){
-    /* Container */
+    /*-----------Container-----------*/
     .container{
         width: 100%;
     }
-    /* Banner Section */
+    /*-----------Banner Section-----------*/
     .banner{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -305,61 +328,69 @@ footer .copyright{
     .banner-right img{
         max-width: 70%;
     }
-    /* Players Section */
+    /*-----------Players Section-----------*/
     .players {
     grid-template-columns: repeat(2, 1fr);
-}
-.highlights {
+    }
+    .highlights {
     grid-template-columns: repeat(1, 1fr);
-}
-.highlights .left{
+    }
+    .highlights .left{
     text-align: center;
-}
-.highlights .lead,.btn{
-    margin: auto;
-}
-.highlights .right{
+    }
+    .highlights .lead,.btn{
+     margin: auto;
+    }
+   .highlights .right{
     margin-top: 2rem;
-}
-/* Footer Section */
+    }
+/*-----------Footer Section-----------*/
   .footer-img img{
       width: 350px;
   }
 }
+
+/* --------------------------------------------------
+         Screen Size Max Width 650px
+-------------------------------------------------- */
 @media only screen and (max-width: 650px) {
-    /* Players Section */
+    /*-----------Players Section-----------*/
     .players {
     grid-template-columns: repeat(1, 1fr);
-}
- /* Teams Section */
- .teams {
+    }
+    /*-----------Teams Section-----------*/
+    .teams {
      grid-template-columns: repeat(5, 1fr);
- }
- #groups-teams .section-title h1 {
+    }
+    #groups-teams .section-title h1 {
     font-size: 25px;
     font-weight: 600;
-}
-.groups {
+    }
+    .groups {
     grid-template-columns: repeat(1, 1fr);
-}
-.group:last-child{
+    }
+    .group:last-child{
     margin-top: 1rem;
+   }
 }
-}
+
+/* --------------------------------------------------
+         Screen Size Max Width 525px
+-------------------------------------------------- */
 @media only screen and (max-width: 525px){
-    /* Banner Section */
+    /*-----------Banner Section-----------*/
     .banner-left .banner-title{
         font-size: 26px;
     }
-    /* Highlights Section */
+    /*-----------Highlights Section-----------*/
     .highlight-title {
     font-size: 26px;
-}
-.teams {
+    }
+    .teams {
     grid-template-columns: repeat(2, 1fr);
-}
-/* Footer Section */
-.footer-img img {
+    }
+    /*-----------Footer Section-----------*/
+    .footer-img img {
     width: 263px;
-}
+    }
 }
