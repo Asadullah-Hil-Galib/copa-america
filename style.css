@@ -336,12 +336,6 @@ footer .copyright{
     .highlights {
     grid-template-columns: repeat(1, 1fr);
     }
-    .highlights .left{
-    text-align: center;
-    }
-    .highlights .lead,.btn{
-     margin: auto;
-    }
    .highlights .right{
     margin-top: 2rem;
     }
